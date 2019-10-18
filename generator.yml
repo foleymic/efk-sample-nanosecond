@@ -1,0 +1,57 @@
+version: "3.4"
+
+services:
+  component-simulator-1:
+    image : debian
+    volumes:
+      - ./configs/simple.log:/simple.log
+    command: cat /simple.log
+    logging:
+      driver: fluentd
+      options:
+        tag: docker
+        fluentd-sub-second-precision: "${ENABLE_SUB_SECOND_PRECISION}"
+
+  component-simulator-2:
+    image : debian
+    volumes:
+      - ./configs/simple.log:/simple.log
+    command: cat /simple.log
+    logging:
+      driver: fluentd
+      options:
+        tag: docker
+        fluentd-sub-second-precision: "${ENABLE_SUB_SECOND_PRECISION}"
+
+  component-simulator-3:
+    image : debian
+    volumes:
+      - ./configs/simple.log:/simple.log
+    command: cat /simple.log
+    logging:
+      driver: fluentd
+      options:
+        tag: docker
+        fluentd-sub-second-precision: "${ENABLE_SUB_SECOND_PRECISION}"
+
+  component-simulator-4:
+    image : debian
+    volumes:
+      - ./configs/simple.log:/simple.log
+    command: cat /simple.log
+    logging:
+      driver: fluentd
+      options:
+        tag: docker
+        fluentd-sub-second-precision: "${ENABLE_SUB_SECOND_PRECISION}"
+
+  component-simulator-5:
+    image : debian
+    volumes:
+      - ./configs/simple.log:/simple.log
+    command: cat /simple.log
+    logging:
+      driver: fluentd
+      options:
+        tag: docker
+        fluentd-sub-second-precision: "${ENABLE_SUB_SECOND_PRECISION}"

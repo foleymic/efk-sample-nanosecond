@@ -1,0 +1,2 @@
+cluster.name: elasticsearch-cluster
+xpack.monitoring.collection.enabled: true
